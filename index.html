@@ -9,27 +9,27 @@
   <body>
     <div class="wrapper">
       <h1>Exchange Rate App</h1>
-      <h2>Sprawdź aktualne kursy walut!</h2>
+      <h2>Check current exchange rates!</h2>
       <div class="exchange-field">
         <div class="field-one">
-          <input type="number" value="1" />
-          <select name="" id="">
-            <option value="" selected>PLN</option>
-            <option value="">USD</option>
-            <option value="">GBP</option>
-            <option value="">EUR</option>
-            <option value="">CHF</option>
+          <input type="number" value="1" class="amount-one" />
+          <select name="" id="currency-one">
+            <option value="PLN" selected>PLN</option>
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+            <option value="EUR">EUR</option>
+            <option value="CHF">CHF</option>
           </select>
         </div>
         <div class="swap-icon"><i class="fa-solid fa-right-left"></i></div>
         <div class="field-two">
-          <input type="number" value="0.26" />
-          <select name="" id="">
-            <option value="">PLN</option>
-            <option value="" selected>USD</option>
-            <option value="">GBP</option>
-            <option value="">EUR</option>
-            <option value="">CHF</option>
+          <input type="number" value="0.26" disabled class="amount-two" />
+          <select name="" id="currency-two">
+            <option value="PLN">PLN</option>
+            <option value="USD" selected>USD</option>
+            <option value="GBP">GBP</option>
+            <option value="EUR">EUR</option>
+            <option value="CHF">CHF</option>
           </select>
         </div>
       </div>

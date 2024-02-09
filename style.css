@@ -62,21 +62,25 @@ h2 {
   width: 120px;
   border: none;
   text-align: center;
+  background-color: white;
+  color: black;
 }
 
 .field-one input:focus,
-.field-two input:focus {
+.field-two input:focus,
+select:focus {
   outline: none;
+  color: rgb(67, 171, 255);
+}
+
+option {
+  color: #333;
 }
 
 select {
   border: none;
   text-align: center;
   font-size: 18px;
-}
-
-select:focus {
-  outline: none;
 }
 
 .course {

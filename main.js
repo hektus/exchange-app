@@ -55,7 +55,7 @@ const swapCurrency = () => {
     currencyTwo.value,
     currencyOne.value,
   ];
-  initCounter();
+  initBase();
 };
 
 initBase();

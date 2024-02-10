@@ -2,6 +2,7 @@ const inputOne = document.querySelector(".amount-one");
 const inputTwo = document.querySelector(".amount-two");
 const currencyOne = document.querySelector("#currency-one");
 const currencyTwo = document.querySelector("#currency-two");
+const swap = document.querySelector(".swap-icon");
 const course = document.querySelector(".course");
 let result;
 let counter;
@@ -49,8 +50,17 @@ const initCounter = () => {
     });
 };
 
+const swapCurrency = () => {
+  [currencyOne.value, currencyTwo.value] = [
+    currencyTwo.value,
+    currencyOne.value,
+  ];
+  initCounter();
+};
+
 initBase();
 
 inputOne.addEventListener("input", initCounter);
 currencyOne.addEventListener("input", initBase);
 currencyTwo.addEventListener("input", initBase);
+swap.addEventListener("click", swapCurrency);
